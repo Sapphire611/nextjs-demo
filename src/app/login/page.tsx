@@ -1,5 +1,5 @@
 "use client"; // 添加这一行以将组件标记为客户端组件
-
+import '@ant-design/v5-patch-for-react-19';
 import React from "react";
 import { Form, Input, Button } from "antd";
 
@@ -10,7 +10,7 @@ export default function Home() {
     const { username, password } = values;
     if (username === "admin" && password === "123456") {
       // 跳转到about界面
-    //   window.location.href = "/about";
+      window.location.href = "/";
     }
   };
 
